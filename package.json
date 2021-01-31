@@ -1,0 +1,23 @@
+{
+  "name": "projet-3-ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/main.css",
+    "prefix": "postcss ./css/main.css --use autoprefixer -d ./css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juleslemorvan/JulesLeMorvan_3_29012021.git"
+  },
+  "author": "Jules Le Morvan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juleslemorvan/JulesLeMorvan_3_29012021/issues"
+  },
+  "homepage": "https://github.com/juleslemorvan/JulesLeMorvan_3_29012021#readme",
+  "dependencies": {
+    "sass": "^1.32.5"
+  }
+}
