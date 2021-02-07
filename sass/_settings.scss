@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
+$grey: #f6f6f6;
+
+$font1: "Shrikhand", "cursive";
+$font2: "Roboto", "cursive";
+
+// MIXINS
+
+@mixin logo {
+  font-family: "Shrikhand", "cursive";
+  font-size: 2rem;
+  padding: 15px;
+}
+
+@mixin button {
+  border: 0;
+  height: 50px;
+  width: 200px;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 100px;
+  align-items: center;
+  color: white;
+  z-index: 1;
+  background: linear-gradient($color-secondary, $color-primary);
+  cursor: pointer;
+  @include box-shadow;
+  transition: box-shadow 0.3s;
+  &:hover {
+    opacity: 0.7;
+    box-shadow: 0.15rem 0.15rem 10px rgba(0, 0, 0, 0.5);
+  }
+}
+@mixin box-shadow {
+  box-shadow: 0.15rem 0.15rem 10px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+  background-color: #3f3e3e;
+  color: white;
+  padding: 20px;
+
+  .logo-footer {
+    font-family: $font1;
+    font-size: 1.5rem;
+    margin: 20px;
+  }
+
+  & a {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    & i {
+      height: 10px;
+      width: 10px;
+      margin: 0px 20px 0px 0px;
+    }
+  }
+
+  .list--footer {
+    padding: 0;
+  }
+}
