@@ -1,0 +1,107 @@
+@import "./settings.scss";
+@import "./home.scss";
+
+header a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+
+  i {
+    position: absolute;
+    left: 30px;
+  }
+}
+
+.menu-image {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.menu {
+  background-color: $grey;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 15px;
+  transform: translateY(-40px);
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5px;
+    padding: 0px 10px 0px 0px;
+  }
+
+  h1 {
+    @include logo;
+    padding: 0px;
+    font-size: 30px;
+  }
+
+  .heart {
+    &__vide {
+      font-size: 25px;
+      top: -20px;
+      right: 20px;
+    }
+  }
+}
+
+.menuCard {
+  &__title {
+    margin: 25px 0 20px 10px;
+  }
+}
+
+.foodCard {
+  @include box-shadow;
+  position: relative;
+  max-width: 100%;
+  margin: 10px 0px 15px 0px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 20px;
+
+  &__title {
+    h4 {
+      font-size: 18px;
+      margin: 10px 0 10px 0;
+    }
+  }
+
+  .foodCard__content {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+
+    .foodCard__description {
+      font-size: 16px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .foodCard__price {
+      margin: 0px 10px 0px 0px;
+      position: absolute;
+      right: 10px;
+      font-weight: bold;
+    }
+  }
+}
+.btn {
+  margin-top: 40px;
+}
+button {
+  &.menu__btn {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    @include button;
+  }
+}

@@ -4,7 +4,7 @@
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
-$grey: #f6f6f6;
+$grey: #f8f4f4;
 
 $font1: "Shrikhand", "cursive";
 $font2: "Roboto", "cursive";
@@ -15,6 +15,10 @@ $font2: "Roboto", "cursive";
   font-family: "Shrikhand", "cursive";
   font-size: 2rem;
   padding: 15px;
+}
+
+@mixin box-shadow {
+  box-shadow: 0.15rem 0.15rem 10px rgba(0, 0, 0, 0.25);
 }
 
 @mixin button {
@@ -36,25 +40,43 @@ $font2: "Roboto", "cursive";
     box-shadow: 0.15rem 0.15rem 10px rgba(0, 0, 0, 0.5);
   }
 }
-@mixin box-shadow {
-  box-shadow: 0.15rem 0.15rem 10px rgba(0, 0, 0, 0.25);
+
+body,
+html {
+  background-color: $grey;
+  font-family: $font2;
+  color: black;
+}
+
+header {
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 2px 10px 3px rgba($color: #d5d5d5, $alpha: 1);
+  .logo {
+    @include logo;
+  }
 }
 
 footer {
-  background-color: #3f3e3e;
+  background-color: #555353;
   color: white;
   padding: 20px;
 
   .logo-footer {
     font-family: $font1;
-    font-size: 1.5rem;
-    margin: 20px;
+    font-size: 20px;
+    margin: 20px 10px;
   }
 
   & a {
     display: flex;
     flex-direction: row;
     color: white;
+    margin: 10px;
+
+    & p {
+      margin: 0;
+    }
     & i {
       height: 10px;
       width: 10px;
@@ -66,3 +88,5 @@ footer {
     padding: 0;
   }
 }
+
+// RESTAURANT

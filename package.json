@@ -1,7 +1,7 @@
 {
   "name": "projet-3-ohmyfood",
   "version": "1.0.0",
-  "description": "",
+  "description": "projet 3 : ohmyfood",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./css/main.css",
