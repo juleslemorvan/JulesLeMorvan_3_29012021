@@ -85,14 +85,14 @@
     border-radius: 15px;
     @include box-shadow;
 
-    &--img {
+    &__img {
       width: 100%;
       height: 70%;
       object-fit: cover;
       border-radius: 15px 15px 0px 0px;
     }
 
-    &--text {
+    &__text {
       margin: 15px 0px 0px 10px;
       color: black;
       h3 {
@@ -103,13 +103,13 @@
       }
     }
 
-    &--heart {
+    &__heart {
       position: absolute;
       font-size: 25px;
       right: 30px;
       bottom: 20px;
     }
-    &--new {
+    &__new {
       position: absolute;
       top: 15px;
       right: 15px;
