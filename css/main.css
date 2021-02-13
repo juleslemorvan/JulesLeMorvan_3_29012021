@@ -352,6 +352,64 @@ template {
   display: none;
 }
 
+.page {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  z-index: 3;
+  opacity: 1;
+  position: fixed;
+  text-align: center;
+  color: white;
+  line-height: 600px;
+  font-size: 2.5rem;
+  animation: visible 4s;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.loader-quart {
+  position: relative;
+  border-radius: 50px;
+  border: 6px solid rgba(255, 255, 255, 0.4);
+}
+
+.loader-quart:after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border-top: 6px solid white;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: white;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes visible {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 body,
 html {
   background-color: #f8f4f4;
@@ -398,6 +456,64 @@ footer .list--footer {
   padding: 0;
 }
 
+.page {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  z-index: 3;
+  opacity: 1;
+  position: fixed;
+  text-align: center;
+  color: white;
+  line-height: 600px;
+  font-size: 2.5rem;
+  animation: visible 4s;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.loader-quart {
+  position: relative;
+  border-radius: 50px;
+  border: 6px solid rgba(255, 255, 255, 0.4);
+}
+
+.loader-quart:after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border-top: 6px solid white;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: white;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes visible {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 body,
 html {
   background-color: #f8f4f4;
@@ -578,6 +694,64 @@ footer .list--footer {
   color: #256d3a;
 }
 
+.page {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  z-index: 3;
+  opacity: 1;
+  position: fixed;
+  text-align: center;
+  color: white;
+  line-height: 600px;
+  font-size: 2.5rem;
+  animation: visible 4s;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.loader-quart {
+  position: relative;
+  border-radius: 50px;
+  border: 6px solid rgba(255, 255, 255, 0.4);
+}
+
+.loader-quart:after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border-top: 6px solid white;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: white;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes visible {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 body,
 html {
   background-color: #f8f4f4;
@@ -624,6 +798,64 @@ footer .list--footer {
   padding: 0;
 }
 
+.page {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  z-index: 3;
+  opacity: 1;
+  position: fixed;
+  text-align: center;
+  color: white;
+  line-height: 600px;
+  font-size: 2.5rem;
+  animation: visible 4s;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.loader-quart {
+  position: relative;
+  border-radius: 50px;
+  border: 6px solid rgba(255, 255, 255, 0.4);
+}
+
+.loader-quart:after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border-top: 6px solid white;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: white;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes visible {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 body,
 html {
   background-color: #f8f4f4;

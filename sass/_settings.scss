@@ -43,57 +43,62 @@ $font2: "Roboto", "cursive";
 
 // LOADER CUBE
 
-// .cube {
-//   margin: 12rem auto 0;
-//   width: 300px;
-//   height: 300px;
-//   transform-style: preserve-3d;
+.page {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  z-index: 3;
+  opacity: 1;
+  position: fixed;
+  text-align: center;
+  color: white;
+  line-height: 600px;
+  font-size: 2.5rem;
+  animation: visible 4s;
+}
+.loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.loader-quart {
+  position: relative;
+  border-radius: 50px;
+  border: 6px solid rgb(255, 255, 255, 0.4);
+}
 
-//   animation: spin 10s infinite linear;
-// }
-// .side {
-//   position: absolute;
-//   opacity: 1;
-//   width: 300px;
-//   height: 300px;
-// }
-// #front {
-//   background: black;
-//   transform: translateZ(calc(300px / 2));
-// }
-// #top {
-//   background: red;
-//   transform: rotateX(-270deg) translateY(calc(-1 * (300px / 2)));
-//   transform-origin: top center;
-// }
-// #bottom {
-//   background: green;
-//   transform: rotateX(270deg) translateY(calc(300px / 2));
-//   transform-origin: bottom center;
-// }
-// #right {
-//   background: yellow;
-//   transform: rotateY(-270deg) translateX(calc(300px / 2));
-//   transform-origin: top right;
-// }
-// #left {
-//   background: white;
-//   transform: rotateY(270deg) translateX(calc(-1 * (300px / 2)));
-//   transform-origin: center left;
-// }
-// #back {
-//   background: blue;
-//   transform: rotateY(-180deg) translateZ(calc((300px / 2)));
-// }
+.loader-quart:after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border-top: 6px solid white;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: white;
+  animation: spin 1s linear infinite;
+}
 
-// @keyframes spin {
-//   from {
-//     transform: rotateY(0) rotateZ(0) rotateX(0);
-//   }
-//   to {
-//     transform: rotateY(360deg) rotateZ(360deg) rotateX(360deg);
-//   }
-// }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes visible {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 body,
 html {
