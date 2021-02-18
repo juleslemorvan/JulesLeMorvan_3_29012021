@@ -108,6 +108,74 @@ $font2: "Roboto", "cursive";
   }
 }
 
+// HEART ANIMATION
+
+.heart_vide {
+  opacity: 1;
+  transition: 400ms;
+  &:hover {
+    opacity: 0;
+  }
+}
+.heart_hover {
+  position: absolute;
+  opacity: 0;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from($color-primary),
+    to($color-secondary)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 400ms;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+// MENU DEROULANT
+
+// .foodCard1 {
+//   animation: fadein1 3s;
+// }
+
+// @keyframes fadein1 {
+//   from {
+//     opacity: 0;
+//   }
+//   to {
+//     opacity: 1;
+//   }
+// }
+// .foodCard2 {
+//   animation: fadein2 5ss;
+// }
+// @keyframes fadein2 {
+//   from {
+//     opacity: 0;
+//   }
+//   to {
+//     opacity: 1;
+//   }
+// }
+@for $i from 1 through 10 {
+  .foodCard--#{$i} {
+    animation: show 400ms 200ms * $i;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 body,
 html {
   background-color: $grey;

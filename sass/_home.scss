@@ -114,12 +114,14 @@
       top: 15px;
       right: 15px;
       padding: 5px;
-      font-size: 15px;
+      font-size: 18px;
       border-radius: 2px;
       @include box-shadow;
       width: fit-content;
-      background-color: $color-tertiary;
-      color: #256d3a;
+      background-color: #86c7bf;
+      color: #3e7941;
+
+      border-radius: 5px;
     }
   }
 }

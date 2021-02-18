@@ -418,6 +418,84 @@ template {
     transform: rotate(360deg);
   }
 }
+.heart_vide {
+  opacity: 1;
+  transition: 400ms;
+}
+.heart_vide:hover {
+  opacity: 0;
+}
+
+.heart_hover {
+  position: absolute;
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 400ms;
+}
+.heart_hover:hover {
+  opacity: 1;
+}
+
+.foodCard--1 {
+  animation: show 400ms 200ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--2 {
+  animation: show 400ms 400ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--3 {
+  animation: show 400ms 600ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--4 {
+  animation: show 400ms 800ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--5 {
+  animation: show 400ms 1000ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--6 {
+  animation: show 400ms 1200ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--7 {
+  animation: show 400ms 1400ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--8 {
+  animation: show 400ms 1600ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--9 {
+  animation: show 400ms 1800ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--10 {
+  animation: show 400ms 2000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body,
 html {
   background-color: #f8f4f4;
@@ -528,6 +606,84 @@ footer .list--footer {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+.heart_vide {
+  opacity: 1;
+  transition: 400ms;
+}
+.heart_vide:hover {
+  opacity: 0;
+}
+
+.heart_hover {
+  position: absolute;
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 400ms;
+}
+.heart_hover:hover {
+  opacity: 1;
+}
+
+.foodCard--1 {
+  animation: show 400ms 200ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--2 {
+  animation: show 400ms 400ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--3 {
+  animation: show 400ms 600ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--4 {
+  animation: show 400ms 800ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--5 {
+  animation: show 400ms 1000ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--6 {
+  animation: show 400ms 1200ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--7 {
+  animation: show 400ms 1400ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--8 {
+  animation: show 400ms 1600ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--9 {
+  animation: show 400ms 1800ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--10 {
+  animation: show 400ms 2000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 body,
@@ -702,12 +858,13 @@ footer .list--footer {
   top: 15px;
   right: 15px;
   padding: 5px;
-  font-size: 15px;
+  font-size: 18px;
   border-radius: 2px;
   box-shadow: 0.15rem 0.15rem 10px rgba(0, 0, 0, 0.25);
   width: fit-content;
-  background-color: #99e2d0;
-  color: #256d3a;
+  background-color: #86c7bf;
+  color: #3e7941;
+  border-radius: 5px;
 }
 
 @keyframes visible {
@@ -774,6 +931,84 @@ footer .list--footer {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+.heart_vide {
+  opacity: 1;
+  transition: 400ms;
+}
+.heart_vide:hover {
+  opacity: 0;
+}
+
+.heart_hover {
+  position: absolute;
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 400ms;
+}
+.heart_hover:hover {
+  opacity: 1;
+}
+
+.foodCard--1 {
+  animation: show 400ms 200ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--2 {
+  animation: show 400ms 400ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--3 {
+  animation: show 400ms 600ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--4 {
+  animation: show 400ms 800ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--5 {
+  animation: show 400ms 1000ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--6 {
+  animation: show 400ms 1200ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--7 {
+  animation: show 400ms 1400ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--8 {
+  animation: show 400ms 1600ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--9 {
+  animation: show 400ms 1800ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--10 {
+  animation: show 400ms 2000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 body,
@@ -886,6 +1121,84 @@ footer .list--footer {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+.heart_vide {
+  opacity: 1;
+  transition: 400ms;
+}
+.heart_vide:hover {
+  opacity: 0;
+}
+
+.heart_hover {
+  position: absolute;
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 400ms;
+}
+.heart_hover:hover {
+  opacity: 1;
+}
+
+.foodCard--1 {
+  animation: show 400ms 200ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--2 {
+  animation: show 400ms 400ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--3 {
+  animation: show 400ms 600ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--4 {
+  animation: show 400ms 800ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--5 {
+  animation: show 400ms 1000ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--6 {
+  animation: show 400ms 1200ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--7 {
+  animation: show 400ms 1400ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--8 {
+  animation: show 400ms 1600ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--9 {
+  animation: show 400ms 1800ms;
+  animation-fill-mode: forwards;
+}
+
+.foodCard--10 {
+  animation: show 400ms 2000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 body,
@@ -1060,12 +1373,13 @@ footer .list--footer {
   top: 15px;
   right: 15px;
   padding: 5px;
-  font-size: 15px;
+  font-size: 18px;
   border-radius: 2px;
   box-shadow: 0.15rem 0.15rem 10px rgba(0, 0, 0, 0.25);
   width: fit-content;
-  background-color: #99e2d0;
-  color: #256d3a;
+  background-color: #86c7bf;
+  color: #3e7941;
+  border-radius: 5px;
 }
 
 header a {
@@ -1127,6 +1441,7 @@ header a i {
   margin: 10px 0px 15px 0px;
   padding: 10px 10px 10px 10px;
   border-radius: 20px;
+  opacity: 0;
 }
 .foodCard__title h4 {
   font-size: 18px;
