@@ -56,6 +56,8 @@ header a {
 .menuCard {
   &__title {
     margin: 25px 0 20px 10px;
+    border-bottom: solid 3px $color-tertiary;
+    width: 46px;
   }
 }
 

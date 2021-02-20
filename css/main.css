@@ -864,6 +864,8 @@ header a i {
 
 .menuCard__title {
   margin: 25px 0 20px 10px;
+  border-bottom: solid 3px #99e2d0;
+  width: 46px;
 }
 
 .foodCard {
