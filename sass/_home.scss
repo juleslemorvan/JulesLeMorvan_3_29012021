@@ -106,8 +106,10 @@
     &__heart {
       position: absolute;
       font-size: 25px;
+      display: flex;
+      justify-content: center;
       right: 30px;
-      bottom: 20px;
+      bottom: 25px;
     }
     &__new {
       position: absolute;
@@ -118,7 +120,7 @@
       border-radius: 2px;
       @include box-shadow;
       width: fit-content;
-      background-color: #86c7bf;
+      background-color: #74cccc;
       color: #3e7941;
 
       border-radius: 5px;

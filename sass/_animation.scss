@@ -1,0 +1,114 @@
+@import "home.scss";
+@import "settings.scss";
+
+// MENU DEROULANT
+
+@for $i from 1 through 10 {
+  .foodCard--#{$i} {
+    animation: show 400ms 200ms * $i;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// LOADER CUBE
+
+@keyframes visible {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.page {
+  background-color: rgba(168, 92, 219, 0.932);
+  height: 100vh;
+  width: 100%;
+  z-index: 3;
+  position: fixed;
+  text-align: center;
+  color: white;
+  line-height: 600px;
+  font-size: 2.5rem;
+  animation: visible 3s forwards;
+}
+.loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.loader-quart {
+  position: relative;
+  border-radius: 50px;
+  border: 6px solid rgb(255, 255, 255, 0.4);
+}
+
+.loader-quart:after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border-top: 6px solid white;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: white;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// // HEART ANIMATION
+
+.heart_vide {
+  opacity: 1;
+  transition: 400ms;
+  &:hover {
+    opacity: 0;
+  }
+}
+.heart_hover {
+  opacity: 0;
+  position: absolute;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from($color-primary),
+    to($color-secondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 400ms;
+  &:hover {
+    opacity: 1;
+  }
+}
