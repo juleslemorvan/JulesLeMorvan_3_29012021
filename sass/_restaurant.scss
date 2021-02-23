@@ -73,7 +73,6 @@ header a {
   overflow: hidden;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-  text-overflow: ellipsis;
 
   &__title {
     h4 {
@@ -89,6 +88,7 @@ header a {
     .foodCard__animation {
       right: 0%;
       animation-fill-mode: forwards;
+      z-index: 40;
     }
     .fas.fa-check-circle {
       animation: rotate 1s;
