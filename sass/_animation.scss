@@ -128,11 +128,11 @@
 
 @keyframes moove {
   0% {
-    transform: scaleY(0);
+    transform: transformeX(0);
     opacity: 0;
   }
   100% {
-    transform: scaleY(1);
+    transform: translateX(20%);
     opacity: 1;
   }
 }
