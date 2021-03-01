@@ -62,68 +62,82 @@ header a {
 }
 
 .foodCard {
+  display: flex;
+  opacity: 0;
   @include box-shadow;
   position: relative;
   max-width: 100%;
   margin: 10px 0px 15px 0px;
   padding: 10px 10px 10px 10px;
   border-radius: 20px;
-  opacity: 0;
-
-  &__title {
-    h4 {
-      font-size: 18px;
-      margin: 10px 0 10px 0;
-    }
-  }
-
-  &:hover {
-    .foodCard-animation {
-      width: 20%;
-      animation: moove 1s forwards;
-    }
-
-    .fas.fa-check-circle {
-      animation: rotate 1s;
-      font-size: 2rem;
-    }
-  }
+  background-color: white;
 
   &__content {
-    display: flex;
-    width: 100%;
+    flex: 1 1;
+    width: 80%;
     padding: 0px;
 
-    .foodCard__description {
-      font-size: 16px;
+    .foodCard__title {
+      h4 {
+        font-size: 18px;
+        margin: 10px 0 10px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 70%;
+      }
+    }
+    .foodCard__legende {
+      display: flex;
+      overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+    }
+    .foodCard__description {
+      font-size: 16px;
       overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: flex;
+      width: 70%;
     }
 
     .foodCard__price {
-      margin: 0px 10px 0px 0px;
-      position: absolute;
-      right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
       font-weight: bold;
+      margin-right: 15px;
+      width: 10%;
     }
   }
+
   &__animation {
-    position: absolute;
-    background-color: #99e2d0;
+    background-color: $color-tertiary;
     overflow: hidden;
     width: 0;
-    right: 0;
-    margin: 0;
+    margin: -10px;
+    padding: 0;
     border-radius: 0px 10px 10px 0px;
-    @include box-shadow;
+
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.4em;
+    transition: width 0.5s ease-in-out;
 
     .fas.fa-check-circle {
       color: white;
+      font-size: 2rem;
+    }
+  }
+
+  &:hover {
+    .foodCard__animation {
+      width: 20%;
+    }
+    .fas.fa-check-circle {
+      animation: rotate 0.5s forwards;
     }
   }
 }

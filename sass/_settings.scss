@@ -9,6 +9,10 @@ $grey: #f8f4f4;
 $font1: "Shrikhand", "cursive";
 $font2: "Roboto", "cursive";
 
+$littlePhone: "only screen and (max-width: 320px)";
+$tablet: "only screen and (min-width: 768px)";
+$desktop: "only screen and (min-width: 1024px)";
+
 // MIXINS
 
 @mixin logo {

@@ -1,0 +1,78 @@
+@import "settings.scss";
+
+/////////////////// LITTLEPHONE /////////////////////////
+// PAGE HOME
+@media #{$littlePhone} {
+  .reservation {
+    h1 {
+      font-size: 27px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+/////////////////// TABLET /////////////////////////
+// PAGE HOME
+
+@media #{$tablet} {
+  .fonctionnement h2 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .box {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+
+    .fa-list-ul {
+      margin-left: -17px;
+    }
+  }
+  // FOOTER
+
+  footer .logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
+  .list--footer {
+    display: flex;
+    justify-content: center;
+
+    a {
+      margin-right: 35px;
+    }
+  }
+}
+
+// PAGE RESTAURANT
+
+@media #{$tablet} {
+  .menu-image {
+    height: 350px;
+  }
+}
+
+/////////////////// DESKTOP /////////////////////////
+
+// PAGE HOME
+@media #{$desktop} {
+  header .logo {
+    font-size: 3rem;
+  }
+  .restaurant-all-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+  .list--footer {
+    a {
+      margin-right: 55px;
+    }
+  }
+}
