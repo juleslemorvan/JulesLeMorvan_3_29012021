@@ -84,7 +84,6 @@ header a {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        width: 70%;
       }
     }
     .foodCard__legende {
@@ -98,7 +97,6 @@ header a {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      display: flex;
       width: 70%;
     }
 
@@ -107,8 +105,9 @@ header a {
       justify-content: center;
       align-items: flex-end;
       font-weight: bold;
-      margin-right: 15px;
+      margin-right: 25px;
       width: 10%;
+      text-align: right;
     }
   }
 

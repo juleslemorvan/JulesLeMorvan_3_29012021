@@ -11,6 +11,9 @@
       font-size: 18px;
     }
   }
+  .foodCard__description {
+    flex: 1 1;
+  }
 }
 
 /////////////////// TABLET /////////////////////////
@@ -35,6 +38,9 @@
 
   header i {
     font-size: 1.5rem;
+  }
+  .foodCard__description {
+    flex: 1 1;
   }
   // FOOTER
 
@@ -113,6 +119,19 @@
       "entrees plats"
       "desserts desserts";
   }
+
+  .foodCard__description {
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1 1;
+  }
+  .foodCard__price {
+    margin: 0;
+    width: 45px;
+    text-align: right;
+  }
   .desserts {
     grid-area: desserts;
     width: 50%;
@@ -129,9 +148,8 @@
 
 /////////////////// LARGEDESKTOP /////////////////////////
 
+// PAGE HOME
 @media #{$largDesktop} {
-  // PAGE HOME
-
   .allBox {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -176,7 +194,44 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 350px;
     gap: 20px;
-
     grid-template-areas: "entrees plats desserts";
+  }
+
+  .foodCard__description {
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1 1;
+  }
+  .foodCard__price {
+    margin: 0;
+    width: 45px;
+    text-align: right;
+  }
+}
+
+// largDesktopX
+
+@media #{$largDesktopX} {
+  header {
+    i {
+      font-size: 4rem;
+    }
+    .logo {
+      font-size: 100px;
+    }
+  }
+  .menu-image {
+    height: 600px;
+  }
+  .menu__title h1 {
+    font-size: 70px;
+  }
+  .heart__vide i {
+    font-size: 50px;
+  }
+  .menuCard__title {
+    font-size: 40px;
   }
 }

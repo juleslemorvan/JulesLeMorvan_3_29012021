@@ -9,10 +9,11 @@ $grey: #f8f4f4;
 $font1: "Shrikhand", "cursive";
 $font2: "Roboto", "cursive";
 
-$littlePhone: "only screen and (max-width: 320px)";
+$littlePhone: "only screen and (min-width: 320px)";
 $tablet: "only screen and (min-width: 768px)";
 $desktop: "only screen and (min-width: 1024px) and (max-width: 1439px)";
 $largDesktop: "only screen and (min-width: 1440px)";
+$largDesktopX: "only screen and (min-width: 2000px)";
 
 // MIXINS
 
