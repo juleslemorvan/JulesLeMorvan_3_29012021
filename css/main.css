@@ -1287,7 +1287,7 @@ footer .list--footer {
   }
 }
 .page {
-  background-color: rgba(168, 92, 219, 0.932);
+  background-color: rgba(123, 103, 134, 0.767);
   height: 100vh;
   width: 100%;
   z-index: 3;
@@ -1471,6 +1471,13 @@ footer .list--footer {
     font-size: 3rem;
   }
 
+  .allBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+  }
+
   .restaurant-all-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1523,6 +1530,13 @@ footer .list--footer {
   }
 }
 @media only screen and (min-width: 1440px) {
+  .allBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+  }
+
   .restaurant-all-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

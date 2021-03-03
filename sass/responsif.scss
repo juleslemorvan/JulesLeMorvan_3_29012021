@@ -69,6 +69,12 @@
   header .logo {
     font-size: 3rem;
   }
+  .allBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+  }
   .restaurant-all-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -126,6 +132,12 @@
 @media #{$largDesktop} {
   // PAGE HOME
 
+  .allBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+  }
   .restaurant-all-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
