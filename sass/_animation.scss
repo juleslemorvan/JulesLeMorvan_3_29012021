@@ -19,7 +19,7 @@
   }
 }
 
-// LOADER CUBE
+// LOADER
 
 @keyframes visible {
   0% {
@@ -39,7 +39,7 @@
   }
 }
 .page {
-  background-color: rgba(123, 103, 134, 0.767);
+  background: linear-gradient($color-secondary, $color-primary);
   height: 100vh;
   width: 100%;
   z-index: 3;
@@ -50,6 +50,7 @@
   font-size: 2.5rem;
   animation: visible 3s forwards;
 }
+
 .loader {
   width: 50px;
   height: 50px;

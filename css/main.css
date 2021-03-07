@@ -1289,7 +1289,7 @@ footer .list--footer {
   }
 }
 .page {
-  background-color: rgba(123, 103, 134, 0.767);
+  background: linear-gradient(#ff79da, #9356dc);
   height: 100vh;
   width: 100%;
   z-index: 3;
