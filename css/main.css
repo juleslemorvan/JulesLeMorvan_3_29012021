@@ -1366,14 +1366,6 @@ footer .list--footer {
     transform: rotate(-360deg);
   }
 }
-@keyframes moove {
-  0% {
-    transform: transformeX(0);
-  }
-  100% {
-    transform: translateX(20%);
-  }
-}
 body,
 html {
   background-color: #f8f4f4;

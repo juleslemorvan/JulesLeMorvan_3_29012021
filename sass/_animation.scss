@@ -126,12 +126,3 @@
     transform: rotate(-360deg);
   }
 }
-
-@keyframes moove {
-  0% {
-    transform: transformeX(0);
-  }
-  100% {
-    transform: translateX(20%);
-  }
-}
