@@ -117,11 +117,19 @@
 
 // MENU CONFIRMED
 
+.foodCard:hover {
+  .foodCard__animation {
+    width: 20%;
+  }
+  .fas.fa-check-circle {
+    animation: rotate 0.5s forwards;
+  }
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0);
   }
-
   100% {
     transform: rotate(-360deg);
   }

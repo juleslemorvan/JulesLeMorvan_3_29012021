@@ -130,15 +130,6 @@ header a {
       font-size: 2rem;
     }
   }
-
-  &:hover {
-    .foodCard__animation {
-      width: 20%;
-    }
-    .fas.fa-check-circle {
-      animation: rotate 0.5s forwards;
-    }
-  }
 }
 
 .btn {

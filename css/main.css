@@ -944,12 +944,6 @@ header a i {
   color: white;
   font-size: 2rem;
 }
-.foodCard:hover .foodCard__animation {
-  width: 20%;
-}
-.foodCard:hover .fas.fa-check-circle {
-  animation: rotate 0.5s forwards;
-}
 
 .btn {
   margin-top: 40px;
@@ -1356,6 +1350,13 @@ footer .list--footer {
 }
 .heart_hover:hover {
   opacity: 1;
+}
+
+.foodCard:hover .foodCard__animation {
+  width: 20%;
+}
+.foodCard:hover .fas.fa-check-circle {
+  animation: rotate 0.5s forwards;
 }
 
 @keyframes rotate {
