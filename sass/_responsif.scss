@@ -72,6 +72,9 @@
 
 // PAGE HOME
 @media #{$desktop} {
+  .loader .loader-quart {
+    font-size: 5rem;
+  }
   header .logo {
     font-size: 3rem;
   }
@@ -150,6 +153,10 @@
 
 // PAGE HOME
 @media #{$largDesktop} {
+  .page {
+    font-size: 4rem;
+  }
+
   .allBox {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
