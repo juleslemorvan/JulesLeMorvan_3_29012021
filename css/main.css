@@ -208,9 +208,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -218,9 +218,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -229,9 +229,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -281,8 +281,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -292,8 +292,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -301,7 +301,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -311,7 +311,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -1293,44 +1293,119 @@ footer .list--footer {
   line-height: 600px;
   font-size: 2.5rem;
   animation: visible 3s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.loader {
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  vertical-align: middle;
+.all {
   position: relative;
+  top: 50px;
 }
 
-.loader-quart {
-  position: relative;
-  border-radius: 50px;
-  border: 6px solid rgba(255, 255, 255, 0.4);
+.cup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 160px;
+  background: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
-.loader-quart:after {
+.cup:before {
   content: "";
   position: absolute;
-  top: -6px;
-  left: -6px;
-  bottom: -6px;
-  right: -6px;
-  border-top: 6px solid white;
-  border-radius: 50px;
-  border: 6px solid transparent;
-  border-top-color: white;
-  animation: spin 1s linear infinite;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  border-radius: 50%;
+  background: #c16d31;
+  border: 7px solid #fff;
+  box-sizing: border-box;
+  transform: translateY(-50%);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-@keyframes spin {
+.cup:after {
+  content: "";
+  position: absolute;
+  top: 48%;
+  right: -50px;
+  height: 98px;
+  width: 80px;
+  border-radius: 50%;
+  background: transparent;
+  border: 12px solid #fff;
+  box-sizing: border-box;
+  transform: translateY(-50%);
+}
+
+.plate {
+  width: 250px;
+  height: 30px;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+  background: #fff;
+  position: absolute;
+  top: 161px;
+  transform: translateX(-50px);
+}
+
+.fume {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: -50px;
+  transform: translateX(10%);
+  width: 100%;
+}
+
+.fume .fumee {
+  list-style: none;
+  width: 2px;
+  height: 40px;
+  background: #fff;
+  float: left;
+  margin: 10px;
+  animation: fumar 2s infinite linear;
+}
+
+@keyframes fumar {
   0% {
-    transform: rotate(0deg);
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(3px);
   }
   100% {
-    transform: rotate(360deg);
+    transform: translateY(-80px);
+    opacity: 0;
+    filter: blur(5px);
   }
 }
+.fume .fumee:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.fume .fumee:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.fume .fumee:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+.fume .fumee:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.fume .fumee:nth-child(5) {
+  animation-delay: 0.2s;
+}
+
 .heart_vide {
   opacity: 1;
   transition: 400ms;
@@ -1342,13 +1417,7 @@ footer .list--footer {
 .heart_hover {
   opacity: 0;
   position: absolute;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#9356dc),
-    to(#ff79da)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
